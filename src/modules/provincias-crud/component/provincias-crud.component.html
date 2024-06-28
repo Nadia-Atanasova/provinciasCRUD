@@ -1,0 +1,25 @@
+<app-header
+  title="Ejemplo CRUD con ndxDataGrid, dxCustomStore y ActionBar"
+  class="sticky-top"
+></app-header>
+<form>
+  <div>{{ currentRow?.data | json }}</div>
+
+  <action-bar
+    #provinciasActionBar
+    name="provinciasActionBar"
+    [showInMenu]="true"
+    [visible]="true"
+    [dataSource]="dsProvincias"
+    [dataGrid]="provinciasGrid"
+  ></action-bar>
+  <ndx-data-grid
+    #provinciasGrid
+    [dataSource]="dsProvincias"
+    [options]="options"
+    [columns]="columns"
+    [(focusedRow)]="currentRow"
+    [embededToolbarTemplate]="provinciasActionBar.actionBarTemplateRef"
+  >
+  </ndx-data-grid>
+</form>
