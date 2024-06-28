@@ -16,7 +16,7 @@ const onEditorPreparing_Provinciasgrid = ($event: EditorPreparingEvent) => {
 };
 
 export const PROVINCIASOPTIONS: Partial<ndxDataGrid> = {
-  keyExpr: 'id_gn_provincias',
+  keyExpr: PROVINCIAS_CRUD_KEY,
   width: '900',
   height: '800',
   paging: { enabled: true, pageSize: 6 },
