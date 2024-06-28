@@ -28,14 +28,4 @@ export const PROVINCIASOPTIONS: Partial<ndxDataGrid> = {
     allowDeleting: true,
   },
   showRowsRevertButton: true,
-  summary: {
-    totalItems: [
-      { column: 'codigo', summaryType: 'count' },
-      {
-        column: 'codigo',
-        summaryType: 'custom',
-        displayFormat: 'CustomText: {0}',
-      },
-    ],
-  },
 };
