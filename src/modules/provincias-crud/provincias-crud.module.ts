@@ -25,5 +25,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     SharedModule,
   ],
   providers: [ProvinciasCRUDService],
+  exports: [
+    ProvinciasCRUDComponent
+  ]
 })
 export class ProvinciasCRUDModule {}
